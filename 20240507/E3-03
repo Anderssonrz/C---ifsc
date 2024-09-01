@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+void main()
+{
+    int ano;
+    printf("\nDigite o ano: ");
+    scanf("%d", &ano);;
+
+    if((ano % 400 == 0) || ((ano % 4 == 0) && (ano % 100 !=0)))
+    {
+        printf("\n %d Ano Bissexto! \n", ano);
+    }
+    else
+    {
+        printf("\n %d Ano nao bisexto.\n", ano);
+    }
+}
+
